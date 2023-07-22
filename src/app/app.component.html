@@ -1,0 +1,104 @@
+<!--
+<h1>Product List</h1> Título para la lista de productos
+
+<button (click)="searchImagesPixabay()">Mostrar imágenes de Pixabay</button>
+Botón para llamar al método searchImagesPixabay()
+<button (click)="searchImagesUnsplash()">Mostrar imágenes de Unsplash</button>
+Botón para llamar al método searchImagesUnsplash()
+
+<div *ngFor="let product of productsPixabay">
+    <h2>{{ product.name }}</h2> Mostrar el nombre del producto obtenido de Pixabay
+    <img [src]="product.imageUrl" alt="Product Image"> Mostrar la imagen del producto obtenido de Pixabay
+</div>
+
+<div *ngFor="let product of productsUnsplash">
+    <h2>{{ product.name }}</h2> Mostrar el nombre del producto obtenido de Unsplash
+    <img [src]="product.imageUrl" alt="Product Image"> Mostrar la imagen del producto obtenido de Unsplash
+</div>
+-->
+
+
+
+<!--<button (click)="changeTitle()">Change</button>
+<app-product [product]="product"*ngFor="let product of products"></app-product>-->
+
+
+<!-- Componente 0: Título -->
+<h1>Material Angular</h1>
+
+<!-- Componente 1: Alternancia de diapositivas -->
+<h2>Componente 1: Alternancia de diapositivas</h2>
+<mat-slide-toggle>Toggle me!</mat-slide-toggle>
+
+<!-- Componente 2: Tarjeta (card) -->
+<h2>Componente 2: Tarjeta (card)</h2>
+<mat-card>
+    <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>Producto 1</mat-card-title>
+        <mat-card-subtitle>Descripción del producto 1</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        Contenido del producto 1...
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-button>Comprar</button>
+    </mat-card-actions>
+</mat-card>
+
+<!-- Componente 3: Botón de alternancia -->
+<h2>Componente 3: Botón de alternancia</h2>
+<mat-button-toggle-group>
+    <mat-button-toggle value="left">Izquierda</mat-button-toggle>
+    <mat-button-toggle value="center">Centro</mat-button-toggle>
+    <mat-button-toggle value="right">Derecha</mat-button-toggle>
+</mat-button-toggle-group>
+
+<br>
+<!-- Componente 4: Insignia (badge) con icono de llamadas -->
+<h2>Componente 4: Insignia (badge) con icono de llamadas</h2>
+<span matBadge="8" matBadgePosition="after" matBadgeColor="accent">
+    <button mat-icon-button>
+        <mat-icon>call</mat-icon>
+    </button>
+</span>
+
+<!-- Componente 5: Checkbox en color verde -->
+<h2>Componente 5: Checkbox</h2>
+<mat-checkbox color="primary">Check me!</mat-checkbox>
+
+<!-- Componente 6: Divider con contactos -->
+<h2>Componente 6: Divider con contactos</h2>
+<mat-divider></mat-divider>
+<p>Contacto 1</p>
+<mat-divider></mat-divider>
+<p>Contacto 2</p>
+<mat-divider></mat-divider>
+<p>Contacto 3</p>
+
+<!-- Componente 7: Progress Spinner -->
+<h2>Componente 7: Progress Spinner</h2>
+<mat-progress-spinner mode="indeterminate"></mat-progress-spinner>
+
+<!-- Componente 8: Input para título -->
+<h2>Componente 8: Input para título</h2>
+<mat-form-field>
+    <mat-label>Título</mat-label>
+    <input matInput placeholder="Ingrese un título">
+</mat-form-field>
+
+<!-- Componente 9: Progress Bar -->
+<h2>Componente 9: Progress Bar</h2>
+<mat-progress-bar mode="determinate" value="50"></mat-progress-bar>
+
+<!-- Componente 10: Extension Panel en español -->
+<h2>Componente 10: Extension Panel en español</h2>
+<mat-expansion-panel>
+    <mat-expansion-panel-header>
+        <mat-panel-title>
+            Este es el contenido del panel de extensión
+        </mat-panel-title>
+    </mat-expansion-panel-header>
+    <p>Este es el cuerpo del panel</p>
+</mat-expansion-panel>
+
